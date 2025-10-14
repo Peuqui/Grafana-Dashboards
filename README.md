@@ -148,13 +148,20 @@ sudo systemctl reload prometheus
 
 ### 4. Import the Dashboard
 
+**Two versions available:**
+
+- **honeypot.json** - For local Grafana installations (recommended)
+- **honeypot-grafana-com.json** - For importing from Grafana.com or sharing
+
+**Steps:**
+
 1. Open Grafana
 2. Go to **Dashboards** → **Import**
 3. Upload `honeypot.json` or paste its content
-4. Map your Prometheus datasource when prompted
+4. Select your Prometheus datasource
 5. Click **Import**
 
-The dashboard uses `${DS_PROMETHEUS}` templating, so it works both for local installations and when shared via Grafana.com.
+**Note**: The `honeypot-grafana-com.json` version includes datasource templating for easier sharing and will prompt you to map your Prometheus datasource during import.
 
 ## How It Works
 

@@ -2,18 +2,23 @@
 
 This document contains all the information needed to upload the SSH Honeypot Dashboard to Grafana.com.
 
-## Dashboard File
+## Dashboard Files
 
-**Use this file for Grafana.com upload:**
-- `honeypot.json`
+**Two versions available:**
 
-This version includes:
-- `__inputs` section for datasource mapping
-- `__requires` section for dependencies
-- `${DS_PROMETHEUS}` datasource templating
-- `version: 1` and `id: null` for proper import handling
+1. **honeypot.json** - For your local Grafana installation
+   - Uses empty datasource UID (`"uid": ""`)
+   - Works with auto-provisioned dashboards
+   - Use this for local development and testing
 
-**Note**: This is the same file used for local installations - it works for both!
+2. **honeypot-grafana-com.json** - For Grafana.com upload
+   - Uses datasource variable `${DS_PROMETHEUS}`
+   - Includes `__inputs` section for datasource mapping
+   - Includes `__requires` section for dependencies
+   - `version: 1` and `id: null` for proper import handling
+   - **Use this file when uploading to Grafana.com**
+
+**Important**: The two versions are identical except for datasource references!
 
 ## Dashboard Information
 
@@ -141,7 +146,7 @@ Hall of Fame table displaying currently trapped sessions and top all-time longes
    - Click "Upload Dashboard" or "Share Dashboard"
 
 3. **Upload Dashboard File**
-   - Select `honeypot.json`
+   - Select `honeypot-grafana-com.json`
    - Fill in the dashboard information from above
 
 4. **Add Screenshots**
