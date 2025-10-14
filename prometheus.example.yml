@@ -1,0 +1,16 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  # Endlessh Honeypot Exporter
+  - job_name: 'endlessh'
+    static_configs:
+      - targets: ['endlessh-exporter:9314']
+        labels:
+          service: 'honeypot'
+
+  # Optional: Prometheus self-monitoring
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
