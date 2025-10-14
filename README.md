@@ -2,7 +2,9 @@
 
 A comprehensive Grafana dashboard for monitoring SSH honeypot attacks using Endlessh, featuring a persistent "Hall of Fame" for the longest trap sessions.
 
-![Dashboard Overview](screenshots/overview.png)
+![Dashboard Overview - Attack Map](screenshots/dashboard-overview-map.png)
+
+![Dashboard Overview - Hall of Fame](screenshots/dashboard-overview-hall-of-fame.png)
 
 ## Features
 
