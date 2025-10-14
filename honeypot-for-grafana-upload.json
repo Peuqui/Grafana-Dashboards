@@ -11,7 +11,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": ""
+        "uid": "${DS_PROMETHEUS}"
       },
       "gridPos": {
         "h": 18,
@@ -90,7 +90,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": ""
+            "uid": "${DS_PROMETHEUS}"
           },
           "expr": "endlessh_connections_per_ip",
           "format": "table",
@@ -124,7 +124,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": ""
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -180,7 +180,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": ""
+            "uid": "${DS_PROMETHEUS}"
           },
           "expr": "endlessh_total_connections",
           "refId": "A"
@@ -193,7 +193,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": ""
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -249,7 +249,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": ""
+            "uid": "${DS_PROMETHEUS}"
           },
           "expr": "endlessh_unique_ips",
           "refId": "A"
@@ -262,7 +262,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": ""
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -318,7 +318,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": ""
+            "uid": "${DS_PROMETHEUS}"
           },
           "expr": "rate(endlessh_total_connections_total[5m]) * 60",
           "refId": "A"
@@ -331,7 +331,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": ""
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -387,7 +387,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": ""
+            "uid": "${DS_PROMETHEUS}"
           },
           "expr": "endlessh_active_connections",
           "refId": "A"
@@ -400,7 +400,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": ""
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -445,7 +445,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": ""
+            "uid": "${DS_PROMETHEUS}"
           },
           "expr": "endlessh_connections_per_country",
           "legendFormat": "{{country}}",
@@ -459,7 +459,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": ""
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -547,7 +547,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": ""
+            "uid": "${DS_PROMETHEUS}"
           },
           "expr": "endlessh_connections_per_ip",
           "format": "table",
@@ -609,7 +609,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": ""
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -689,7 +689,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": ""
+            "uid": "${DS_PROMETHEUS}"
           },
           "expr": "rate(endlessh_total_connections_total[5m]) * 60",
           "legendFormat": "Attacks per Minute",
@@ -702,7 +702,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": ""
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -812,7 +812,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": ""
+            "uid": "${DS_PROMETHEUS}"
           },
           "expr": "endlessh_total_connections",
           "legendFormat": "Total Connections (60min)",
@@ -821,7 +821,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": ""
+            "uid": "${DS_PROMETHEUS}"
           },
           "expr": "endlessh_active_connections",
           "legendFormat": "Active Connections (Trapped Now)",
@@ -834,7 +834,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": ""
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -863,8 +863,8 @@
               }
             ]
           },
-          "unit": "dthms",
-          "decimals": 0
+          "unit": "s",
+          "decimals": 1
         },
         "overrides": []
       },
@@ -896,20 +896,20 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": ""
+            "uid": "${DS_PROMETHEUS}"
           },
           "expr": "endlessh_avg_trap_duration_seconds",
           "refId": "A"
         }
       ],
-      "title": "Avg Trap Duration",
+      "title": "Max Trap Duration",
       "transparent": false,
       "type": "stat"
     },
     {
       "datasource": {
         "type": "prometheus",
-        "uid": ""
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -938,8 +938,8 @@
               }
             ]
           },
-          "unit": "dthms",
-          "decimals": 0
+          "unit": "s",
+          "decimals": 1
         },
         "overrides": []
       },
@@ -971,20 +971,20 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": ""
+            "uid": "${DS_PROMETHEUS}"
           },
           "expr": "endlessh_max_trap_duration_seconds",
           "refId": "A"
         }
       ],
-      "title": "Max Trap Duration",
+      "title": "Avg Trap Duration",
       "transparent": false,
       "type": "stat"
     },
     {
       "datasource": {
         "type": "prometheus",
-        "uid": ""
+        "uid": "${DS_PROMETHEUS}"
       },
       "fieldConfig": {
         "defaults": {
@@ -1060,7 +1060,7 @@
                   {
                     "options": {
                       "trapped": {
-                        "text": "🍯 Trapped",
+                        "text": "Trapped",
                         "color": "orange"
                       },
                       "released": {
@@ -1290,7 +1290,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": ""
+            "uid": "${DS_PROMETHEUS}"
           },
           "expr": "endlessh_connection_info",
           "format": "table",
@@ -1298,7 +1298,7 @@
           "refId": "A"
         }
       ],
-      "title": "🍯 Trap Sessions - Live & Hall of Fame",
+      "title": "Trap Sessions - Live and Hall of Fame",
       "transformations": [
         {
           "id": "organize",
@@ -1386,7 +1386,61 @@
   },
   "timepicker": {},
   "timezone": "",
-  "title": "🍯 SSH Honeypot - Attack Map",
-  "uid": "ssh-honeypot",
-  "version": 2
+  "title": "SSH Honeypot - Attack Map with Hall of Fame",
+  "uid": null,
+  "version": 2,
+  "__inputs": [
+    {
+      "name": "DS_PROMETHEUS",
+      "label": "Prometheus",
+      "description": "Prometheus datasource with endlessh-exporter metrics",
+      "type": "datasource",
+      "pluginId": "prometheus",
+      "pluginName": "Prometheus"
+    }
+  ],
+  "__requires": [
+    {
+      "type": "grafana",
+      "id": "grafana",
+      "name": "Grafana",
+      "version": "9.0.0"
+    },
+    {
+      "type": "datasource",
+      "id": "prometheus",
+      "name": "Prometheus",
+      "version": "1.0.0"
+    },
+    {
+      "type": "panel",
+      "id": "geomap",
+      "name": "Geomap",
+      "version": ""
+    },
+    {
+      "type": "panel",
+      "id": "stat",
+      "name": "Stat",
+      "version": ""
+    },
+    {
+      "type": "panel",
+      "id": "piechart",
+      "name": "Pie chart",
+      "version": ""
+    },
+    {
+      "type": "panel",
+      "id": "table",
+      "name": "Table",
+      "version": ""
+    },
+    {
+      "type": "panel",
+      "id": "timeseries",
+      "name": "Time series",
+      "version": ""
+    }
+  ]
 }

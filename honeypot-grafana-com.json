@@ -863,8 +863,8 @@
               }
             ]
           },
-          "unit": "s",
-          "decimals": 1
+          "unit": "dthms",
+          "decimals": 0
         },
         "overrides": []
       },
@@ -902,7 +902,7 @@
           "refId": "A"
         }
       ],
-      "title": "⏱️ Avg Trap Duration",
+      "title": "Avg Trap Duration",
       "transparent": false,
       "type": "stat"
     },
@@ -938,8 +938,8 @@
               }
             ]
           },
-          "unit": "s",
-          "decimals": 1
+          "unit": "dthms",
+          "decimals": 0
         },
         "overrides": []
       },
@@ -977,7 +977,7 @@
           "refId": "A"
         }
       ],
-      "title": "🏆 Max Trap Duration",
+      "title": "Max Trap Duration",
       "transparent": false,
       "type": "stat"
     },
@@ -1388,7 +1388,7 @@
   "timezone": "",
   "title": "🍯 SSH Honeypot - Attack Map",
   "uid": "ssh-honeypot",
-  "version": 1,
+  "version": 2,
   "__inputs": [
     {
       "name": "DS_PROMETHEUS",
