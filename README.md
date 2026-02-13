@@ -1,12 +1,25 @@
-# 🍯 SSH Honeypot Dashboard for Grafana
+# Grafana Dashboards
 
-A comprehensive Grafana dashboard for monitoring SSH honeypot attacks using Endlessh, featuring a persistent "Hall of Fame" for the longest trap sessions.
+A collection of custom Grafana dashboards for home server monitoring.
+
+## Dashboards
+
+| Dashboard | File | Description |
+|-----------|------|-------------|
+| **SSH Honeypot** | `honeypot.json` | Endlessh tarpit monitoring with Hall of Fame, Attack Map, GeoIP |
+| **System Monitoring** | `system-monitoring.json` | Full system metrics via Node Exporter (CPU, RAM, Disk, Network, GPU) |
+
+---
+
+## 🍯 SSH Honeypot Dashboard
+
+Monitors an [Endlessh](https://github.com/skeeto/endlessh) SSH honeypot - a tarpit that traps SSH clients by slowly sending an endless SSH banner.
 
 ![Dashboard Overview - Attack Map](screenshots/dashboard-overview-map.png)
 
 ![Dashboard Overview - Hall of Fame](screenshots/dashboard-overview-hall-of-fame.png)
 
-## Features
+### Features
 
 - 🏆 **Hall of Fame System** - Persistent Top 100 all-time longest trap sessions
 - 🗺️ **Attack Map** - Geographic visualization of attack origins
@@ -310,4 +323,38 @@ If you find this dashboard useful, consider:
 
 ---
 
-**Note**: This is a monitoring tool for security research and educational purposes. Always ensure your honeypot is properly isolated and does not pose a security risk to your network.
+---
+
+## 📊 System Monitoring Dashboard
+
+Comprehensive system monitoring dashboard based on Prometheus Node Exporter metrics.
+
+### Features
+
+- CPU usage, load average, context switches
+- Memory & Swap usage
+- Disk I/O, filesystem usage
+- Network traffic per interface
+- System uptime, kernel version
+- GPU monitoring (NVIDIA/AMD)
+
+### Prerequisites
+
+- Prometheus with [Node Exporter](https://github.com/prometheus/node_exporter)
+- Grafana
+
+### Installation
+
+1. Import `system-monitoring.json` in Grafana (Dashboards → Import)
+2. Select your Prometheus datasource
+3. Done!
+
+---
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Peuqui/Grafana-Dashboards&type=Date)](https://star-history.com/#Peuqui/Grafana-Dashboards&Date)
+
+---
+
+**Note**: The SSH Honeypot dashboard is a monitoring tool for security research and educational purposes. Always ensure your honeypot is properly isolated and does not pose a security risk to your network.
