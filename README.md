@@ -307,7 +307,7 @@ This is done via a hidden `sort_order` field calculated by the exporter.
 
 ## License
 
-MIT License - Feel free to use and modify!
+[MIT](LICENSE) - Feel free to use and modify!
 
 ## Contributing
 
