@@ -305,6 +305,12 @@ This is done via a hidden `sort_order` field calculated by the exporter.
 - GeoIP data provided by [ip-api.com](http://ip-api.com)
 - Inspired by the need to track persistent attackers
 
+## Star History
+
+![Star History](https://raw.githubusercontent.com/Peuqui/Traffic/main/data/Grafana-Dashboards/star-history.svg)
+
+<sub>Recorded daily in [Peuqui/Traffic](https://github.com/Peuqui/Traffic), together with views and clones. GitHub restricted the stargazer API to repo admins on 2026-06-30, so external chart services now need a token with write access.</sub>
+
 ## License
 
 [MIT](LICENSE) - Feel free to use and modify!
@@ -350,10 +356,6 @@ Comprehensive system monitoring dashboard based on Prometheus Node Exporter metr
 3. Done!
 
 ---
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=Peuqui/Grafana-Dashboards&type=Date)](https://star-history.com/#Peuqui/Grafana-Dashboards&Date)
 
 ---
 
